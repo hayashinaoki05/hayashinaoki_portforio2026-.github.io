@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
+    ======================================================================
+    【SEO・基本設定】
+    ブラウザのタブに表示されるタイトルや説明文です。
+    後からご自身の名前やキャッチコピーに変更してください。
+    ======================================================================
+  -->
+  <title>Frontend Engineer Portfolio | 自己紹介＆技術ポートフォリオ</title>
+  <meta name="description" content="フロントエンド開発、Salesforce(Apex/LWC)、Java、SQLを強みとするエンジニアのポートフォリオサイトです。">
+  
+  <!-- スタイルシートの読み込み -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 
+    ======================================================================
+    【HEADER】サイトナビゲーション
+    ページ上部に固定されるヘッダーバーです。
+    各リンクをクリックすると該当のセクションへスムーズにスクロールします。
+    ======================================================================
+  -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <!-- サイトロゴ（ご自身の名前やイニシャルに変更可能です） -->
+      <a href="#hero" class="logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        <span class="logo-text">Dev.Portfolio</span>
+      </a>
+
+      <!-- ナビゲーションメニュー -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+          <li class="nav-item"><a href="#playground" class="nav-link nav-highlight">Tech Gimmick ⚡</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- モバイル用ハンバーガーメニューボタン -->
+      <button class="menu-toggle" id="menu-toggle" aria-label="メニューを開閉する">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- 
+      ======================================================================
+      【HERO】トップメインビジュアル
+      訪問者が最初に目にする最重要エリアです。
+      エンジニアとしてのコアバリューと熱意を端的に伝えます。
+      ======================================================================
+    -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="status-dot"></span> Frontend & Cloud Developer
+          </div>
+          <h1 class="hero-title">
+            ビジネスを加速させる<br>
+            <span class="text-gradient">堅牢なロジック</span> と <span class="text-gradient">快適なUI</span> を。
+          </h1>
+          <p class="hero-desc">
+            はじめまして。フロントエンド（HTML/CSS/JavaScript）から、
+            Salesforce（Apex/LWC）、Java・SQLによるバックエンドロジックまで一気通貫で設計・実装できるエンジニアです。<br>
+            「要件定義・業務設計」から「使い心地の良いUI実装」まで、ビジネス成果に直結する開発を得意としています。
+          </p>
+          <div class="hero-actions">
+            <a href="#works" class="btn btn-primary">実績を見る</a>
+            <a href="#playground" class="btn btn-secondary">技術ギミックを試す ⚡</a>
+            <a href="#contact" class="btn btn-outline">お問い合わせ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      ======================================================================
+      【ABOUT】自己紹介＆エンジニアとしての強み
+      ここがポートフォリオの主役です！
+      自身のバックグラウンド、大切にしている価値観、3大強みをアピールします。
+      ======================================================================
+    -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-sub">Who I Am</span>
+          <h2 class="section-title">私について & エンジニアとしての強み</h2>
+          <p class="section-lead">
+            フロントエンドの見栄えだけでなく、データ構造や業務フローを深く理解した設計・開発を行います。
+          </p>
+        </div>
+
+        <!-- 3つの強みカード -->
+        <div class="grid strength-grid">
+          <!-- 強み1: Salesforce / クラウド開発 -->
+          <div class="card strength-card">
+            <div class="card-icon">☁️</div>
+            <h3 class="card-title">Salesforce & クラウド開発</h3>
+            <p class="card-text">
+              標準機能の活用から、Apex（Javaベースのバックエンド）やLWC（Lightning Web Components）によるカスタム開発まで対応。業務要件に寄り添った最適なCRM基盤を構築します。
+            </p>
+            <div class="card-tags">
+              <span class="tag">Apex</span>
+              <span class="tag">LWC</span>
+              <span class="tag">SOQL</span>
+              <span class="tag">Process Automation</span>
+            </div>
+          </div>
+
+          <!-- 強み2: モダンフロントエンド -->
+          <div class="card strength-card">
+            <div class="card-icon">💻</div>
+            <h3 class="card-title">モダン・フロントエンド実装</h3>
+            <p class="card-text">
+              HTML5のセマンティックな記述、CSS変数やGrid/Flexboxによる堅牢なレスポンシブデザイン、Vanilla JSからフレームワークまで、パフォーマンスと保守性を両立したUIを提供します。
+            </p>
+            <div class="card-tags">
+              <span class="tag">HTML5 / CSS3</span>
+              <span class="tag">JavaScript (ES6+)</span>
+              <span class="tag">UI/UX</span>
+              <span class="tag">Responsive</span>
+            </div>
+          </div>
+
+          <!-- 強み3: ビジネスロジック & データ設計 -->
+          <div class="card strength-card">
+            <div class="card-icon">🧠</div>
+            <h3 class="card-title">ビジネスロジック・データ理解</h3>
+            <p class="card-text">
+              Javaのオブジェクト指向設計（カプセル化・再利用性）や、SQLによる効率的なデータリレーション設計を理解しているため、バックエンド開発者との円滑な連携や上流工程からの参画が可能です。
+            </p>
+            <div class="card-tags">
+              <span class="tag">Java (OOP)</span>
+              <span class="tag">SQL / RDBMS</span>
+              <span class="tag">要件定義</span>
+              <span class="tag">データモデリング</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- プロフィール詳細 & キャリアタイムライン -->
+        <div class="about-detail-box">
+          <div class="about-profile">
+            <h3>プロフィール概要</h3>
+            <p>
+              エンジニアとして技術のキャッチアップとリハビリを常に続け、現場で求められる実践的なスキルを磨いています。<br>
+              「コードが綺麗であること」はもちろん、「将来の運用保守がしやすいこと」「業務ユーザーが直感的に操作できること」を最重要視しています。
+            </p>
+            <div class="about-badges">
+              <div class="badge-item">
+                <span class="badge-num">100%</span>
+                <span class="badge-label">レスポンシブ対応</span>
+              </div>
+              <div class="badge-item">
+                <span class="badge-num">Full-Stack</span>
+                <span class="badge-label">Front to DBの知見</span>
+              </div>
+              <div class="badge-item">
+                <span class="badge-num">Agile</span>
+                <span class="badge-label">柔軟な改善マインド</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      ======================================================================
+      【SKILLS】スキルセット一覧
+      後からスキルを追加しやすいように、カテゴリごとに整理されています。
+      新しいスキルを足す時は、カードの中の <div class="skill-item"> をコピペしてください。
+      ======================================================================
+    -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-sub">Tech Stack</span>
+          <h2 class="section-title">保有スキル・技術スタック</h2>
+          <p class="section-lead">
+            フロントエンドからサーバーサイド、データベース、クラウドまで幅広くカバーしています。
+          </p>
+        </div>
+
+        <div class="grid skills-grid">
+          <!-- カテゴリ1: フロントエンド -->
+          <div class="card skill-category-card">
+            <h3 class="category-title">🎨 Frontend</h3>
+            <div class="skill-list">
+              <!-- スキル項目: HTML5 -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">HTML5</span>
+                  <span class="skill-level">セマンティック / SEO / アクセシビリティ</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+              </div>
+              <!-- スキル項目: CSS3 -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">CSS3 / Flexbox / Grid</span>
+                  <span class="skill-level">CSS変数 / レスポンシブ設計 / アニメーション</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 88%;"></div></div>
+              </div>
+              <!-- スキル項目: JavaScript -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">JavaScript (ES6+)</span>
+                  <span class="skill-level">DOM操作 / 非同期処理 / クラス構文</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- カテゴリ2: バックエンド & データベース -->
+          <div class="card skill-category-card">
+            <h3 class="category-title">⚙️ Backend & Database</h3>
+            <div class="skill-list">
+              <!-- スキル項目: Java -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Java</span>
+                  <span class="skill-level">オブジェクト指向設計 / カプセル化 / コレクション</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+              </div>
+              <!-- スキル項目: SQL -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">SQL / RDBMS</span>
+                  <span class="skill-level">CRUD操作 / JOIN・集計 / クエリ最適化</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 82%;"></div></div>
+              </div>
+              <!-- スキル項目: REST API / JSON -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">API連携 (Fetch / JSON)</span>
+                  <span class="skill-level">非同期データ送受信 / エラーハンドリング</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- カテゴリ3: クラウド & ツール -->
+          <div class="card skill-category-card">
+            <h3 class="category-title">☁️ Salesforce & Tools</h3>
+            <div class="skill-list">
+              <!-- スキル項目: Salesforce Apex / SOQL -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Salesforce (Apex / SOQL)</span>
+                  <span class="skill-level">トリガ / バッチ / ガバナ制限対策 / ガバナ意識</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+              <!-- スキル項目: LWC -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Salesforce LWC (Lightning Web Components)</span>
+                  <span class="skill-level">Web標準UIコンポーネント開発 / Wireサービス</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+              </div>
+              <!-- スキル項目: Git / GitHub -->
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Git / GitHub / VS Code</span>
+                  <span class="skill-level">バージョン管理 / ブランチ運用 / CI/CD基礎</span>
+                </div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      ======================================================================
+      【WORKS】制作実績・ポートフォリオ作品
+      過去の制作物や担当したプロジェクト、今回の技術展示をカードで紹介します。
+      新しい実績を追加したい場合は、<article class="card work-card"> をコピペしてください。
+      ======================================================================
+    -->
+    <section class="section works-section" id="works">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-sub">Portfolio & Projects</span>
+          <h2 class="section-title">制作実績 & プロジェクト</h2>
+          <p class="section-lead">
+            実務で培ったロジック設計力とUI構築力を活かした制作事例です。
+          </p>
+        </div>
+
+        <div class="grid works-grid">
+          <!-- 実績カード1: 本ポートフォリオサイト -->
+          <article class="card work-card">
+            <div class="work-header">
+              <span class="work-badge">Web Application</span>
+              <h3 class="work-title">拡張型エンジニアポートフォリオ（本サイト）</h3>
+            </div>
+            <p class="work-desc">
+              「後からJava/SQLの技術検証コードを追加できる」をコンセプトに設計したレスポンシブWebサイト。
+              Vanilla JSによるOOP・SQLの疑似実行エンジンや連動クイズ機能を搭載しています。
+            </p>
+            <div class="work-tech">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Vanilla JS</span>
+              <span class="tag">OOP設計</span>
+            </div>
+            <div class="work-footer">
+              <a href="#playground" class="work-link">ギミックを試す →</a>
+            </div>
+          </article>
+
+          <!-- 実績カード2: SalesforceカスタムUI開発 -->
+          <article class="card work-card">
+            <div class="work-header">
+              <span class="work-badge">Enterprise CRM</span>
+              <h3 class="work-title">Salesforce 業務ダッシュボード & LWC画面</h3>
+            </div>
+            <p class="work-desc">
+              複雑な顧客情報と商談データを一元管理するカスタム画面をLWCで構築。
+              バックエンドのApexで集計クエリ（SOQL）を最適化し、表示速度を向上させました。
+            </p>
+            <div class="work-tech">
+              <span class="tag">Salesforce</span>
+              <span class="tag">Apex</span>
+              <span class="tag">LWC</span>
+              <span class="tag">SOQL</span>
+            </div>
+            <div class="work-footer">
+              <span class="work-status">🔒 業務実績（非公開案件）</span>
+            </div>
+          </article>
+
+          <!-- 実績カード3: 社内情報共有・サイネージ基盤 -->
+          <article class="card work-card">
+            <div class="work-header">
+              <span class="work-badge">Internal System</span>
+              <h3 class="work-title">デジタルインフォメーションボード</h3>
+            </div>
+            <p class="work-desc">
+              社内向けのお知らせ、スケジュール、各種リマインダーをリアルタイムに自動表示する情報配信ボード。
+              長時間稼働に耐える軽量なJavaScriptスクリプトとレイアウト崩れのないCSS設計を実現。
+            </p>
+            <div class="work-tech">
+              <span class="tag">JavaScript</span>
+              <span class="tag">CSS Animation</span>
+              <span class="tag">DOM操作</span>
+            </div>
+            <div class="work-footer">
+              <span class="work-status">📌 継続改善中</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      ======================================================================
+      【PLAYGROUND / TECH GIMMICK】技術展示＆シミュレーター（ここをギミックに）
+      面接官や訪問者に「Java・SQL・JS」の理解度をアピールするための体験型エリアです！
+      タブ切り替えで以下の3つの機能を楽しめます：
+        ① Java (Apex) オブジェクト指向シミュレーター
+        ② SQL (SOQL) データ操作エンジン
+        ③ IT基礎クイズ（正解すると現場コードを表示）
+      ======================================================================
+    -->
+    <section class="section playground-section" id="playground">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-sub">Interactive Tech Showcase</span>
+          <h2 class="section-title">⚡ 技術展示：Java & SQL 疑似シミュレーター</h2>
+          <p class="section-lead">
+            フロントエンド（JavaScript）上で、Javaのオブジェクト指向設計とSQLのデータ操作を再現しました。<br>
+            ボタンをクリックして、実際のロジック挙動をお試しください。
+          </p>
+        </div>
+
+        <!-- タブ切り替えボタン -->
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="tab-java">
+            ☕ ① Java (Apex) OOP展示
+          </button>
+          <button class="tab-btn" data-tab="tab-sql">
+            🗄️ ② SQL (SOQL) データ操作
+          </button>
+          <button class="tab-btn" data-tab="tab-quiz">
+            🎯 ③ 技術力診断クイズ
+          </button>
+        </div>
+
+        <!-- タブコンテンツエリア -->
+        <div class="tab-contents">
+          
+          <!-- ==============================================
+               ① タブ1: Java (Apex) オブジェクト指向アピールエリア
+               ============================================== -->
+          <div class="tab-pane active" id="tab-java">
+            <div class="playground-layout">
+              <!-- 説明＆操作パネル -->
+              <div class="playground-controls">
+                <div class="badge-mini">Object-Oriented Programming in JS</div>
+                <h3>Java (Apex) クラス構造の再現</h3>
+                <p class="playground-desc">
+                  JavaScriptのES6 <code>class</code> を用いて、Java/Apexの<strong>カプセル化（Private変数）</strong>、
+                  <strong>ビジネスロジックの集約</strong>、<strong>インスタンス管理</strong>をシミュレートしています。
+                </p>
+
+                <div class="btn-group-vertical">
+                  <button id="btn-java-init" class="btn btn-action">
+                    1. インスタンス生成 <code>new JavaAccountManager(...)</code>
+                  </button>
+                  <button id="btn-java-add-deal" class="btn btn-action" disabled>
+                    2. 商談を追加 <code>manager.addDeal(...)</code>
+                  </button>
+                  <button id="btn-java-calc-tier" class="btn btn-action" disabled>
+                    3. 年商計算 & 顧客ランク判定 <code>manager.evaluateTier()</code>
+                  </button>
+                  <button id="btn-java-reset" class="btn btn-action-secondary">
+                    🔄 リセット
+                  </button>
+                </div>
+
+                <div class="extension-tip">
+                  💡 <strong>拡張用ヒント:</strong><br>
+                  <code>java-demo.js</code> 内の <code>JavaAccountManager</code> クラスに新しいメソッドを追加すると、
+                  そのままJavaの実務アピール用ロジックとして機能します。
+                </div>
+              </div>
+
+              <!-- 実行結果表示ターミナル -->
+              <div class="playground-terminal">
+                <div class="terminal-header">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                  <span class="terminal-title">Java JVM / Apex Console Simulation</span>
+                </div>
+                <div class="terminal-body" id="java-terminal">
+                  <div class="terminal-line line-comment">// 待機中: 左のボタンを押してJavaロジックを実行してください</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================================
+               ② タブ2: SQL (SOQL) データ操作アピールエリア
+               ============================================== -->
+          <div class="tab-pane" id="tab-sql">
+            <div class="playground-layout">
+              <!-- 説明＆クエリ選択パネル -->
+              <div class="playground-controls">
+                <div class="badge-mini">Database & SOQL Engine</div>
+                <h3>擬似データベース & クエリ抽出</h3>
+                <p class="playground-desc">
+                  メモリ上の疑似テーブル（オブジェクト配列）に対し、SQLの <code>WHERE</code> や <code>ORDER BY</code>、
+                  集計関数（SUM）を模したJavaScriptフィルタを適用します。
+                </p>
+
+                <div class="control-select-box">
+                  <label for="sql-query-select"><strong>実行するクエリを選択:</strong></label>
+                  <select id="sql-query-select" class="form-select">
+                    <option value="ALL">SELECT * FROM Account (全件取得)</option>
+                    <option value="ENTERPRISE">SELECT * FROM Account WHERE Type = 'Enterprise'</option>
+                    <option value="HIGH_REVENUE">SELECT * FROM Account WHERE AnnualRevenue &gt;= 50,000,000</option>
+                    <option value="ACTIVE_SORT">SELECT * FROM Account WHERE IsActive = true ORDER BY Revenue DESC</option>
+                  </select>
+                </div>
+
+                <div class="btn-group-vertical">
+                  <button id="btn-sql-run" class="btn btn-action">
+                    ▶️ クエリを実行する (Execute Query)
+                  </button>
+                  <button id="btn-sql-add-record" class="btn btn-action-secondary">
+                    ➕ 新規ダミーレコードを挿入 (INSERT)
+                  </button>
+                </div>
+
+                <div class="extension-tip">
+                  💡 <strong>拡張用ヒント:</strong><br>
+                  <code>sql-demo.js</code> の <code>DUMMY_ACCOUNT_TABLE</code> 配列にレコードを追加したり、
+                  新しいクエリ関数を定義してドロップダウンに項目を足せます。
+                </div>
+              </div>
+
+              <!-- クエリ結果テーブル表示 -->
+              <div class="playground-terminal">
+                <div class="terminal-header">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                  <span class="terminal-title">SQL Query Result Window</span>
+                </div>
+                <div class="sql-code-display" id="sql-query-text">
+                  -- SELECT * FROM Account
+                </div>
+                <div class="table-responsive">
+                  <table class="data-table" id="sql-result-table">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>取引先名 (Name)</th>
+                        <th>業種 (Industry)</th>
+                        <th>顧客区分 (Type)</th>
+                        <th>年商 (Annual Revenue)</th>
+                        <th>有効状態</th>
+                      </tr>
+                    </thead>
+                    <tbody id="sql-table-body">
+                      <!-- JavaScriptから動的にレコードが挿入されます -->
+                    </tbody>
+                  </table>
+                </div>
+                <div class="terminal-footer-info" id="sql-result-count">
+                  取得件数: 0 件
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==============================================
+               ③ タブ3: 連動するITクイズ機能
+               ============================================== -->
+          <div class="tab-pane" id="tab-quiz">
+            <div class="quiz-container">
+              <!-- クイズヘッダー＆プログレス -->
+              <div class="quiz-header">
+                <div class="quiz-progress-text">
+                  Question <span id="quiz-current-num">1</span> / <span id="quiz-total-num">3</span>
+                </div>
+                <div class="quiz-progress-bar">
+                  <div class="quiz-progress-fill" id="quiz-progress-fill" style="width: 33%;"></div>
+                </div>
+              </div>
+
+              <!-- 問題カード -->
+              <div class="quiz-card" id="quiz-card">
+                <div class="quiz-category" id="quiz-category">Java (OOP)</div>
+                <h3 class="quiz-question" id="quiz-question-text">問題文が読み込まれます...</h3>
+                
+                <!-- 選択肢リスト（JSで生成） -->
+                <div class="quiz-options" id="quiz-options">
+                  <!-- ボタンが動的に挿入されます -->
+                </div>
+
+                <!-- 回答後の解説エリア（初期は非表示） -->
+                <div class="quiz-feedback hidden" id="quiz-feedback">
+                  <div class="feedback-badge" id="feedback-badge">正解！</div>
+                  <p class="feedback-text" id="feedback-text"></p>
+                  
+                  <!-- 実務再現サンプルコード表示エリア -->
+                  <div class="code-showcase-box">
+                    <div class="code-showcase-header">
+                      <span>実務再現コードサンプル & 解説</span>
+                    </div>
+                    <pre><code id="feedback-code" class="code-block"></code></pre>
+                  </div>
+
+                  <div class="feedback-action">
+                    <button id="btn-quiz-next" class="btn btn-primary">次の問題へ進む →</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 完了画面（初期は非表示） -->
+              <div class="quiz-finished hidden" id="quiz-finished">
+                <div class="finished-icon">🎉</div>
+                <h3>クイズ全問完了！お疲れ様でした</h3>
+                <p id="quiz-final-score">スコア: 3 / 3 点</p>
+                <p class="finished-sub">
+                  JavaやSQLの基礎ロジックを理解した上でフロントエンドを構築できるのが私の強みです。
+                </p>
+                <button id="btn-quiz-restart" class="btn btn-secondary">もう一度挑戦する</button>
+              </div>
+
+              <div class="extension-tip quiz-tip">
+                💡 <strong>拡張用ヒント:</strong><br>
+                <code>quiz.js</code> の <code>QUIZ_DATA</code> 配列にオブジェクトをコピー＆ペーストするだけで、
+                何問でも簡単にオリジナルクイズを追加できます。
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      ======================================================================
+      【CONTACT】連絡先＆外部リンク
+      採用担当者や案件相談者が迷わず連絡できるよう、
+      メール・GitHub・SNS等の導線を分かりやすく設置します。
+      ======================================================================
+    -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-sub">Get In Touch</span>
+          <h2 class="section-title">お問い合わせ & リンク</h2>
+          <p class="section-lead">
+            フロントエンド開発、Salesforce案件、モダンWeb開発のご相談など、お気軽にお声がけください。
+          </p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- リンクカード -->
+          <div class="contact-links-grid">
+            <!-- GitHubリンク -->
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon">🐙</div>
+              <div class="contact-card-info">
+                <h4>GitHub</h4>
+                <p>リポジトリ一覧・コードの確認はこちら</p>
+              </div>
+              <span class="card-arrow">→</span>
+            </a>
+
+            <!-- メールリンク -->
+            <a href="mailto:example@example.com" class="contact-card">
+              <div class="contact-card-icon">✉️</div>
+              <div class="contact-card-info">
+                <h4>Email</h4>
+                <p>example@example.com（編集してください）</p>
+              </div>
+              <span class="card-arrow">→</span>
+            </a>
+
+            <!-- 技術ブログ / Zenn / Qiita等 -->
+            <a href="https://qiita.com" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-card-icon">📝</div>
+              <div class="contact-card-info">
+                <h4>Tech Blog / Qiita / Zenn</h4>
+                <p>日々の技術知見やトラブルシューティングのアウトプット</p>
+              </div>
+              <span class="card-arrow">→</span>
+            </a>
+          </div>
+
+          <!-- 簡易メッセージフォーム（モック） -->
+          <div class="contact-form-box">
+            <h3>簡易メッセージ送信（テスト用）</h3>
+            <form id="contact-form" class="form">
+              <div class="form-group">
+                <label for="contact-name">お名前 / 企業名 <span class="required">*</span></label>
+                <input type="text" id="contact-name" placeholder="山田 太郎" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">メールアドレス <span class="required">*</span></label>
+                <input type="email" id="contact-email" placeholder="yamada@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-body">ご用件・メッセージ <span class="required">*</span></label>
+                <textarea id="contact-body" rows="4" placeholder="ポートフォリオを拝見しご連絡いたしました。" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">送信する（動作モック）</button>
+            </form>
+            <div id="contact-feedback" class="form-result hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 
+    ======================================================================
+    【FOOTER】フッター
+    ======================================================================
+  -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p class="copyright">&copy; 2026 Developer Portfolio. Built with HTML, CSS & Vanilla JavaScript.</p>
+      <a href="#hero" class="back-to-top" aria-label="ページトップへ戻る">↑ Top</a>
+    </div>
+  </footer>
+
+  <!-- 
+    ======================================================================
+    【SCRIPT FILES】JavaScriptの読み込み
+    責務ごとにファイルを分割してあるため、後から個別に編集・リハビリしやすい構造です。
+      1. java-demo.js : Java (Apex) オブジェクト指向の擬似クラスとロジック
+      2. sql-demo.js  : 疑似SQLテーブルとクエリフィルタ関数
+      3. quiz.js      : ITクイズのデータ配列と出題ロジック
+      4. main.js      : ページ全体のタブ切替・スクロール・フォーム制御
+    ======================================================================
+  -->
+  <script src="java-demo.js"></script>
+  <script src="sql-demo.js"></script>
+  <script src="quiz.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+
