@@ -19,6 +19,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 //document：htmlをいじるときに必要なデータ。この後の.の先でhtmlに関して何かしらの指示をする。
 //document.addEventlistener:カッコ内に含まれるイベントが発生した場合、さらにそのカッコ内のイベントを発生させてね、という意味。
+//DOMContentLoaded:特別な意味のある関数名。条件として、サイトを読み込み直した時、という意味。
 //() => { :アロー関数と呼ばれ、小括弧に引数を、中括弧にその後の処理を記載するための土台みたいなもの。function(){}と全く同じ意味。
   // ====================================================================
   // 1. 技術展示（Tech Gimmick）タブ切り替え機能
@@ -29,7 +30,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const tabPanes = document.querySelectorAll(".tab-pane");
 
   tabButtons.forEach(button => {
+  //tabButtons、つまりcssでbuttonという変数が呼び出された時のたびにこの関数が動く。buttonはこの関数の名前。
     button.addEventListener("click", () => {
+    //クリックされるというイベント発生ごとにこのボタン関数が実行される。
       // 1. すべてのタブボタンから active クラスを外す
       tabButtons.forEach(btn => btn.classList.remove("active"));
       // 2. すべてのコンテンツ（pane）から active クラスを外す
